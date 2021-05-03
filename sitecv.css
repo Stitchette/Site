@@ -3,11 +3,11 @@ html,body
     background-color: rgb(0, 0, 0);
 }
 
-header ul
-{
+
+header ul{
+
+    background: linear-gradient(rgb(219, 127, 173), 40%, black);
     display: flex;
-    background-color: rgb(129, 129, 129);
-    color: rgb(214, 214, 214);
     text-align: center;
     padding-top: 1px;
     border-radius: 10px;
@@ -26,7 +26,7 @@ li
     font-size: 20px;
 }
 
-li+p
+li
 {
     font-size: 15px;
 }
@@ -40,12 +40,12 @@ ul
 a
 {
     text-decoration: none;
-    color: rgb(61, 60, 60);
+    color:rgb(51,51,51);
 }
 
 a:hover
 {
-    color: rgb(219, 127, 173);
+  color: rgb(152, 127, 219);
 
 }
 
@@ -63,7 +63,7 @@ section
 
 article
 {
-    background-color: grey;
+background-color: grey;
     color: honeydew;
     text-align: center;
     margin: 5px;
@@ -102,8 +102,11 @@ aside
     border-radius: 10px;
     width: 20%;
 }
-
-h1,h2,h3
+h1
+{
+  color: black;
+}
+h2,h3,h4
 {
     text-align: center;
     padding: auto;
@@ -119,11 +122,19 @@ img
 
 footer
 {
-    color: rgb(61, 60, 60);
-    background-color: grey;
-    padding: 1%;
-    text-align: right;
-    width: auto;
-    border-radius: 10px;
-
+  background: linear-gradient(black, 40%, rgb(219, 127, 173));
+  /* background:radial-gradient(
+  rgba(255,0,0,.5),
+  rgba(255,0,0,0) 70.71%),
+radial-gradient(circle at 6.7% 75%,
+  rgba(0,0,255,.5),
+  rgba(0,0,255,0) 70.71%),
+radial-gradient(circle at 93.3% 75%,
+  rgba(0,255,0,.5),
+  rgba(0,255,0,0) 70.71%) beige; */
+   border-radius: 10px;
+     display: flex;
+    align-items:flex-end;
+    justify-content: end;
+    height: 70px;
 }
