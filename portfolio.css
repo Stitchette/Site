@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body
+{
+    background-color: #204E4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    margin-top: 80px;
+    width: 60%;
+}
+
+section .card
+{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+section .card .box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+section .card:hover .box
+{
+    transform: rotateY(180deg);
+}
+
+section .card .box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .card .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .card .box .contentBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+section .card .box .contentBx div 
+{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #be82df,#6883F5);
+    transform: translateZ(100px);
+}
+
+section .card .box .contentBx div h2
+{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+section .card .box .contentBx div p
+{
+    color: #fff;
+    font-size: 15px;
+}
+
+aside
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 35%;
+    height: 725px;
+    background-color: #f8bfab;
+    padding: 30px;
+    margin-top: 60px;
+    margin-right: 150px;
+    border: 5px white solid;
+}

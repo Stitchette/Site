@@ -8,22 +8,30 @@
 body
 {
     min-height: 100vh;
-    background-color:rgb(66, 66, 66);
+    background-color:#B2B2C5;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-h1,h3
+h1
+{
+    color: #fff;
+    width: 100%;
+    margin-left: 50px;
+    color: #333;
+}
+
+h2
+{
+    transform: rotate(5deg);
+}
+
+h3
 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-}
-
-h2
-{
-    transform: rotate(5deg);
 }
 
 #counter
@@ -37,8 +45,13 @@ h2
 header
 {
     display: flex;
-    justify-content: space-between;
-    border: 5px solid red;
+    align-items: center;
+}
+
+header img
+{
+    width: 200px;
+    height: 200px;
 }
 
 ul
@@ -121,7 +134,7 @@ ul li a:hover::before
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 0;
+    padding: 50px 0;
     width: 100%;
 }
 
@@ -177,28 +190,24 @@ ul li a:hover::before
 
 .container .box:nth-child(1):before, .container .box:nth-child(1):after
 {
-    background: linear-gradient(315deg, rgb(255, 0, 0),rgb(251, 255, 0));
+    background-color: #034f6d;
 }
 
 .container .box:nth-child(2):before, .container .box:nth-child(2):after
 {
-    background: linear-gradient(315deg, rgb(179, 255, 0),rgb(0, 255, 191));
+ background-color: #f8bfab;
 }
+
 
 .container .box:nth-child(3):before, .container .box:nth-child(3):after
 {
-    background: linear-gradient(315deg, rgb(0, 4, 255),rgb(174, 0, 255));
+    background-color: #be82df;
 }
 
 .container .box:nth-child(4):before, .container .box:nth-child(4):after
 {
-    background: linear-gradient(315deg, rgb(255, 0, 76),rgb(51, 5, 5));
-}
-
-.container .box:nth-child(5):before, .container .box:nth-child(5):after
-{
-    background: linear-gradient(315deg, rgb(34, 19, 23),rgb(240, 205, 205));
-}
+    background-color: #6883F5;   
+} 
 
 .container .box span
 {
@@ -329,5 +338,11 @@ footer
 {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+footer img
+{ 
+    width: 200px;
+    height: 200px;
 }
